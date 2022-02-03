@@ -2,14 +2,14 @@
     name: snyk open source
     description: "Snyk SCA Scan"
     language: system
-    entry: bash -c  'snyk test'
+    entry: bash -c  'snyk test --severity-threshold=critical'
 -   id: snyk-code
     name: snyk code test
     description: "Snyk code Scan"
     language: system
-    entry: bash -c  'snyk code test'
+    entry: bash -c  'snyk code test --severity-threshold=high'
 -   id: snyk-iac
     name: snyk IaC 
     description: "Snyk IAC Scan"
     language: system
-    entry: bash -c  'snyk iac test'
+    entry: bash -c  'snyk iac test --severity-threshold=critical'
