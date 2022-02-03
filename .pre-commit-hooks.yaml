@@ -1,0 +1,5 @@
+-   id: snyk
+    name: snyk open source
+    description: "Snyk SCA Scan"
+    language: system
+    entry: bash -c  'snyk test'
